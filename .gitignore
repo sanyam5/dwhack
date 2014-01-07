@@ -1,14 +1,6 @@
 
 *.meta
 
-vocadict/Library/metadata/13/1333e6721da2e48cf8b3042046a14b03
-
-vocadict/Library/metadata/30/30c78cdc6c0d94071a46e1c8f424891f
-
-vocadict/Library/metadata/67/678a41fb219a84411a3ec3f69a560bb1
-
-vocadict/Library/metadata/6a/6a335aa489b384396823c8cc58458db6
-
 vocadict/Library/assetDatabase3
 
 vocadict/Library/assetDatabase3
@@ -16,3 +8,11 @@ vocadict/Library/assetDatabase3
 vocadict/Library/guidmapper
 
 vocadict/Library/guidmapper
+
+vocadict/Library/metadata/
+
+vocadict/Temp/
+
+vocadict/Library/AssetVersioning.db
+
+
