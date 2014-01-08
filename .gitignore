@@ -1,5 +1,7 @@
 
 *.meta
+*.js.meta
+*.unity.meta
 *.png.meta
 
 vocadict/Library/assetDatabase3
