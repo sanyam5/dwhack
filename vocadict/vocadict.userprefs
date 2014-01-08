@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameSetup.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\moveontouch.js">
     <Files>
-      <File FileName="Assets\GameSetup.js" Line="19" Column="21" />
+      <File FileName="Assets\moveontouch.js" Line="1" Column="1" />
+      <File FileName="Assets\GameSetup.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
