@@ -1,15 +1,22 @@
 ﻿#pragma strict
 
-var letter1:Transform;
-var letter2:Transform;
-var letter3:Transform;
-
+var mainCam:Camera;
+var letter : GameObject[];
+var alpha: char[];
+var alpha_sprite : Sprite[];
+var floor:Transform;
+var finalword;
 function Start () {
-	letter1.position = Vector3 (-100f,-100f,-100f);
-	letter2.position = Vector3 (-100f,-100f,-100f);
-	letter3.position = Vector3 (-100f,-100f,-100f);
+	for(var i=0;i<8;i++)
+	{
+		letter[i].transform.position = Vector3 (-100f,-100f,-100f);
+	}
+	floor.transform.position  = Vector3 (0f,0f,0f);
 }
 
 function Update () {
-	
+//	if(timer())
+//	{
+//		letter[].GetComponent(SpriteRenderer).sprite = alpha_sprite[j];
+//	}
 }
