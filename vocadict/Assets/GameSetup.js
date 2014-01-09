@@ -12,8 +12,9 @@ var timer1:int;
 
 // Letter Parameters
 var letter : GameObject[];
-var alpha: String;// stores the alphabet stored in a letter
+var alpha: int[];// stores the alphabet stored in a letter
 var alpha_sprite : Sprite[];// stores the images of alphabets
+var clicked:int;
 
 var floor:Transform;
 
@@ -27,7 +28,7 @@ function Start ()
 	for(var i=0;i<8;i++)
 	{
 		//Initializing positon of fallen objects in the Screen
-		position_on_screen[i] = mainCam.ScreenToWorldPoint(Vector3((i+1)*Screen.width/9,3*Screen.height/4,Screen.height));
+		position_on_screen[i] = mainCam.ScreenToWorldPoint(Vector3((i+1)*Screen.width/9,5*Screen.height/4,Screen.height));
 		position_filled[i] = false;
 		
 		letter[i].rigidbody2D.gravityScale = 0;
@@ -42,13 +43,20 @@ function Update ()
 	if(timer()==true)
 	{
 		find_and_fill();// finds a empty letter object and fills random letter in it;
-	}
+	}	
 }
+
+function click(message:String)
+{
+	var index = parseInt(message.Substring(message.Length-1,1));
+	Debug.Log("kk"+alpha[index] + " " + index);
+}
+
  function timer() : boolean
  {
  	var prediff = timer1;
 	timer1 = Time.time - startTime;  //Set time
-	Debug.Log ("Time: "+timer1);
+	//Debug.Log ("Time: "+timer1);
 	if(timer1>prediff && timer1%5==0)
 	{ //<-------the number here are the seconds you want
 		Debug.Log ("Letter Time");
@@ -66,10 +74,10 @@ function find_and_fill()
 	index = find_empty();
 	Debug.Log(index);
 	
-	//alpha[index] = 'a';
+	alpha[index] = rand;
 	letter[index].GetComponent(SpriteRenderer).sprite = alpha_sprite[rand];
 	letter[index].transform.position = find_position();
-	letter[index].rigidbody2D.gravityScale = 0;
+	letter[index].rigidbody2D.gravityScale = 1;
 	letter[index].active = true;// letter filled
 }
 
