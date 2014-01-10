@@ -1,4 +1,4 @@
-﻿#pragma strict
+﻿ #pragma strict
 public var test:int;
 var touchPos : Vector2;
 var aTouch : boolean = false;
@@ -37,7 +37,17 @@ function Update () {
         //transform.position = actual2D;//touchPos/100;
         if(collider2D.OverlapPoint(actual2D))
         {
-        	//Debug.Log("yes" + gameObject.GetInstanceID);
+        	Debug.Log("fucckkk" + gameObject.name);
+        	
+        	if(gameObject.name == "quit")
+        	{
+        		Application.LoadLevel(0);
+        	}
+        	else if(gameObject.name == "play")
+        	{
+        		Application.LoadLevel(1);
+        	}
+        	else
         	gamesetup.SendMessage("click",gameObject.name);
         }
         else
