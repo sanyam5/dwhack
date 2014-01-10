@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GameSetup.js">
     <Files>
       <File FileName="Assets\taplog.js" Line="12" Column="36" />
-      <File FileName="Assets\GameSetup.js" Line="52" Column="24" />
+      <File FileName="Assets\GameSetup.js" Line="56" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
